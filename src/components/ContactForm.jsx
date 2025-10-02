@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ContactUs() {
+export default function ContactForm() {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -23,7 +23,7 @@ export default function ContactUs() {
       <div className="custom-container">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-white font-semibold text-center text-5xl mb-16">
-            Contact Us
+            Get In Touch!
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name */}

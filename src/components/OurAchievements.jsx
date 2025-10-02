@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function OurResults() {
+export default function OurAchievements() {
   const stats = [
-    { value: "$2M+", label: "In Managed Ad Spend" },
-    { value: "3k+", label: "Custom Ecommerce Designs" },
-    { value: "+81%", label: "Avg. Increase in Traffic YoY" },
+    { value: "500+", label: "Projects Completed" },
+    { value: "200+", label: "Happy Clients" },
+    { value: "15+", label: "Years Experience" },
+    { value: "50+", label: "Team Members" },
   ];
 
   return (
@@ -29,13 +30,13 @@ export default function OurResults() {
 
       <div className="relative z-10 custom-container text-center">
         <p className="uppercase text-sm tracking-wide text-gray-400">
-          Our Results
+          Key Achievements
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold mt-2 max-w-[587px] mx-auto">
-          We Built Engitech to Grow with You
+        <h2 className="text-3xl md:text-3xl font-bold mt-2 max-w-[587px] mx-auto">
+          Consistently exceeding expectations across industries and regions.
         </h2>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-4 gap-8">
           {stats.map((stat, idx) => (
             <div key={idx} className="flex flex-col items-center">
               <span className="text-3xl md:text-4xl font-bold text-teal-400">
