@@ -1,16 +1,18 @@
-import React, { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import React from "react";
+// import Particles from "react-tsparticles";
+// import { loadFull } from "tsparticles";
 
 const HeroSection = ({ title, description, banner }) => {
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
+  // const particlesInit = useCallback(async (engine) => {
+  //   await loadFull(engine);
+  // }, []);
 
   return (
-    <section className={`relative bg-[#0F1426] py-40 overflow-hidden ${banner}`}>
+    <section
+      className={`relative bg-[#0F1426] py-40 overflow-hidden ${banner}`}
+    >
       {/* Background Particles */}
-      <Particles
+      {/* <Particles
         id="tsparticles"
         init={particlesInit}
         className="absolute inset-0 z-0"
@@ -41,7 +43,7 @@ const HeroSection = ({ title, description, banner }) => {
           },
           detectRetina: true,
         }}
-      />
+      /> */}
 
       {/* Content */}
       <div className="relative z-10 custom-container text-center lg:text-left text-white">

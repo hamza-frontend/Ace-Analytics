@@ -1,12 +1,12 @@
-import React, { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import React from "react";
+// import Particles from "react-tsparticles";
+// import { loadFull } from "tsparticles";
 
 export default function HeroSection() {
-  const particlesInit = useCallback(async (engine) => {
-    // load tsparticles package
-    await loadFull(engine);
-  }, []);
+  // const particlesInit = useCallback(async (engine) => {
+  //   // load tsparticles package
+  //   await loadFull(engine);
+  // }, []);
 
   return (
     <>
@@ -23,7 +23,7 @@ export default function HeroSection() {
         />
 
         {/* Particles */}
-        <Particles
+        {/* <Particles
           id="tsparticles"
           init={particlesInit}
           className="absolute inset-0 z-0"
@@ -54,7 +54,7 @@ export default function HeroSection() {
             },
             detectRetina: true,
           }}
-        />
+        /> */}
 
         {/* Content */}
         <div className="relative z-10 custom-container py-20 md:py-28">
