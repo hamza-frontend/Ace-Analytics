@@ -1,6 +1,6 @@
 import React from "react";
 import OurAchievements from "@/components/OurAchievements";
-import OurValues from "@/components/ourValues";
+import OurValues from "@/components/OurValues";
 import RevenueSection from "@/components/Revenue";
 import OurStory from "@/components/OurStory";
 import OurProcess from "@/components/OurProcess";
