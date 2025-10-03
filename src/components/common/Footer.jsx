@@ -34,15 +34,15 @@ export default function Footer() {
       dropdown: [
         { to: "/services/it-consultancy", label: "IT Consultancy" },
         {
-          to: "/services/electical-mechanical",
+          to: "/services/electrical-mechanical",
           label: "Electrical & Mechanical",
           dropdown: [
             {
-              to: "/services/electical-mechanical/generators",
+              to: "/services/electrical-mechanical/generators",
               label: "Generators",
             },
-            { to: "/services/electical-mechanical/signal", label: "Signal" },
-            { to: "/services/electical-mechanical/pcb's", label: "PCB’s" },
+            { to: "/services/electrical-mechanical/signals", label: "Signals" },
+            { to: "/services/electrical-mechanical/pcb's", label: "PCB’s" },
           ],
         },
         { to: "/services/software-development", label: "Software Development" },

@@ -10,15 +10,15 @@ const navLinks = [
     dropdown: [
       { to: "/services/it-consultancy", label: "IT Consultancy" },
       {
-        to: "/services/electical-mechanical",
+        to: "/services/electrical-mechanical/generators",
         label: "Electrical & Mechanical",
         dropdown: [
           {
-            to: "/services/electical-mechanical/generators",
+            to: "/services/electrical-mechanical/generators",
             label: "Generators",
           },
-          { to: "/services/electical-mechanical/signal", label: "Signal" },
-          { to: "/services/electical-mechanical/pcb's", label: "PCB’s" },
+          { to: "/services/electrical-mechanical/signals", label: "Signals" },
+          { to: "/services/electrical-mechanical/pcb's", label: "PCB’s" },
         ],
       },
       { to: "/services/software-development", label: "Software Development" },
@@ -98,18 +98,20 @@ export default function Header() {
                 </div>
               </div>
             ) : (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="text-white hover:text-teal-400 font-semibold cursor-pointer"
-                // onClick={() =>
-                //   document.getElementById(link.id).scrollIntoView({
-                //     behavior: "smooth",
-                //   })
-                // }
-              >
-                {link.label}
-              </Link>
+              <>
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className="text-white hover:text-teal-400 font-semibold cursor-pointer"
+                  // onClick={() =>
+                  //   document.getElementById(link.id).scrollIntoView({
+                  //     behavior: "smooth",
+                  //   })
+                  // }
+                >
+                  {link.label}
+                </Link>
+              </>
             )
           )}
         </nav>

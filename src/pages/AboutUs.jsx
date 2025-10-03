@@ -16,6 +16,7 @@ export default function AboutUs() {
         description=" We are a trusted partner in IT Consultancy, Software Development, R&D,
           and Electrical & Mechanical services. With years of expertise, we
           deliver innovative solutions tailored to your business growth."
+        banner="bg-[url('/about-us-hero.png')] bg-cover bg-center bg-no-repeat"
       />
       <OurStory />
       <OurProcess />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function RevenueSection() {
   return (
@@ -18,9 +19,13 @@ export default function RevenueSection() {
             obligations of business it will frequently
           </p>
 
-          <button className="cursor-pointer bg-white text-[#1E4A82] px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
+
+          <Link
+            to="/contact-us"
+            className="cursor-pointer bg-white text-[#1E4A82] px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition"
+          >
             Let’s Work Together
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ const features = [
     title: "IT Consultancy",
     description:
       "We are completely free and open-source, with 3M+ on-prem installs, 8k+ community members, and 300+ amazing contributors.",
-    icon: "💠",
+    icon: "☁️",
     category: "IT",
   },
   {
@@ -97,6 +97,7 @@ export default function OurServices() {
               <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-tr from-cyan-400 to-blue-600 rounded-full mb-4 text-xl">
                 {feature.icon}
               </div>
+
               <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
               <p className="text-sm text-gray-400 mb-4">
                 {feature.description}
