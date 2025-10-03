@@ -18,4 +18,5 @@ export default defineConfig({
     host: true, // 👈 exposes on your local network
     port: 3000, // (optional) fix port instead of random one
   },
+  base: "./", // 👈 important for Netlify
 });
