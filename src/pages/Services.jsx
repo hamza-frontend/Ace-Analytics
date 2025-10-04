@@ -1,5 +1,5 @@
 import HeroSection from "@/components/common/HeroSection";
-import OurServices from "@/components/ourServices";
+import OurServices from "@/components/OurServices";
 import React from "react";
 
 const Services = () => {
