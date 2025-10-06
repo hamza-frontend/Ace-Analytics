@@ -42,7 +42,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-[#181B2A] shadow-sm">
+    <header className="bg-[#181B2A] shadow-sm sticky top-0 z-50">
       <div className="custom-container flex justify-between items-center py-4">
         {/* Logo */}
         <Link to="/">

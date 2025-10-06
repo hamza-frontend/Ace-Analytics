@@ -10,7 +10,7 @@ const HeroSection = ({ title, description, banner }) => {
 
   return (
     <section
-      className={`relative bg-[#0F1426] py-40 overflow-hidden ${banner}`}
+      className={`relative bg-[#0F1426] overflow-hidden ${banner} min-h-[calc(100vh-77px)]`}
     >
       {/* Background Particles */}
       <Particles
@@ -47,23 +47,25 @@ const HeroSection = ({ title, description, banner }) => {
       />
 
       {/* Content */}
-      <div className="relative z-10 custom-container text-center lg:text-left text-white">
-        <div className="max-w-[580px]">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            {title}
-          </h1>
+      <div className="relative z-10 custom-container">
+        <div className="flex flex-col justify-center min-h-[calc(100vh-77px)] py-10 ">
+          <div className="text-center lg:text-left text-white lg:max-w-[548px] md:max-w-[400px]">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              {title}
+            </h1>
 
-          <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0">
-            {description}
-          </p>
+            <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0">
+              {description}
+            </p>
 
-          <div className="mt-8">
-            <a
-              href="/contact-us"
-              className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
-            >
-              Get in Touch
-            </a>
+            <div className="mt-8">
+              <a
+                href="/contact-us"
+                className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
+              >
+                Get in Touch
+              </a>
+            </div>
           </div>
         </div>
       </div>

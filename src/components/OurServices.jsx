@@ -4,42 +4,42 @@ const features = [
   {
     title: "IT Consultancy",
     description:
-      "We are completely free and open-source, with 3M+ on-prem installs, 8k+ community members, and 300+ amazing contributors.",
+      "We provide expert IT consultancy to help businesses modernize their infrastructure and optimize digital performance. From system audits to tailored tech solutions, we ensure your technology aligns perfectly with your goals.",
     icon: "☁️",
     category: "IT",
   },
   {
     title: "Generators",
     description:
-      "With over 8 thousand users, our self-service Cloud platform provides a dashboard for quickly spinning up fully-managed projects.",
+      "We supply, install, and maintain high-performance generators designed to deliver uninterrupted power for industrial and commercial needs. Reliability and energy efficiency are at the core of our solutions.",
     icon: "☁️",
     category: "Electrical & Mechanical",
   },
   {
     title: "Signal",
     description:
-      "Take your business serverless with a modern API pipeline and code-free data exploration app, all powered by our tailored, enterprise-scale platform.",
+      "Our signal systems are engineered for accuracy and durability, covering traffic, communication, and industrial signaling setups to enhance safety and control across applications.",
     icon: "🏢",
     category: "Electrical & Mechanical",
   },
   {
     title: "PCB’s",
     description:
-      "Providing expert electrical & mechanical services with modern tools and certified engineers.",
+      "We design and develop high-quality Printed Circuit Boards (PCBs) that power a wide range of electronic systems, ensuring performance, precision, and long-lasting reliability.",
     icon: "⚡",
     category: "Electrical & Mechanical",
   },
   {
     title: "Software Development",
     description:
-      "Providing expert electrical & mechanical services with modern tools and certified engineers.",
+      "We build custom software solutions tailored to your business needs—web, mobile, or enterprise. Our team focuses on scalability, performance, and seamless user experience across every platform.",
     icon: "⚡",
     category: "Software",
   },
   {
     title: "R&D & Consulting",
     description:
-      "Providing expert electrical & mechanical services with modern tools and certified engineers.",
+      "Our R&D and Consulting services help organizations innovate and grow through research-backed strategies. From concept validation to full-scale development, we turn ideas into practical, high-impact solutions.",
     icon: "⚡",
     category: "R&D & Consulting",
   },
@@ -75,7 +75,7 @@ export default function OurServices() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-5 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+              className={`px-5 py-2 rounded-lg  transition-all duration-300 cursor-pointer font-semibold ${
                 activeCategory === cat
                   ? "bg-gradient-to-r from-cyan-400 to-blue-600 text-white"
                   : "bg-gray-800 text-gray-400 hover:bg-gray-700"
@@ -103,7 +103,7 @@ export default function OurServices() {
                 {feature.description}
               </p>
               <a
-                href="#"
+                href="/services"
                 className="text-sm text-white hover:text-teal-400 font-medium inline-flex items-center group"
               >
                 Learn More
