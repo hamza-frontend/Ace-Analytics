@@ -19,29 +19,32 @@ export default function AboutSection() {
                 About Us
               </p>
               <h2 className="xl:text-5xl  lg:text-[42px] text-4xl font-bold mb-4 leading-tight md:text-left text-center">
-                Manage Pure SQL <br className="hidden md:block" />
-                Database Content
+                Innovative Engineering & <br className="hidden md:block" />
+                Tech Solutions
               </h2>
               <p className="text-gray-400 mb-6 md:text-left text-center">
-                Unify your customer’s touch points across all platforms and
-                channels.
+                We empower industries through advanced IT systems, reliable
+                electrical and mechanical infrastructure, and next generation
+                software solutions.
               </p>
               <a
                 href="#"
                 className="inline-flex items-center text-teal-400 font-medium hover:underline md:justify-start justify-center w-full"
               >
-                Explore Segment for Engineering
+                Explore Ace Analytics for Tech & Engineering Excellence
                 <ArrowRight className="w-4 h-4 ml-2" />
               </a>
             </div>
 
             <div className=" lg:max-w-[440px] md:max-w-[300px]">
               <p className="lg:text-2xl text-xl font-medium mb-2 md:text-left text-center">
-                These cases are perfectly simple and easy to distinguish.
+                Our services are efficient, adaptable, and designed for lasting
+                impact.
               </p>
               <p className="text-gray-400 mb-8 md:text-left text-center">
-                Segment collects user events from your web & mobile apps and
-                provides a complete data toolkit to every team in your company.
+                Ace Analytics delivers complete technology and engineering
+                solutions, enabling every team to perform with precision and
+                confidence.
               </p>
               <div className="flex md:justify-start justify-center space-x-10">
                 <div>

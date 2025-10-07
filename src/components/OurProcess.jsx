@@ -2,14 +2,19 @@ import React from "react";
 
 const features = [
   {
-    title: "Get a Number or Bring Your Own",
+    title: "Project Consultation and Analysis",
     description:
-      "Call and message anyone, anywhere in the world. Make cross-border communication easier.",
+      "We begin by understanding your business goals and technical challenges to design efficient and practical strategies.",
   },
   {
-    title: "Start Using Ease",
+    title: "Design and Development",
     description:
-      "Call and message anyone, anywhere in the world. Make cross-border communication easier.",
+      "Our team engineers reliable electrical and mechanical systems, develops scalable software, and provides R&D consulting tailored to your needs.",
+  },
+  {
+    title: "Implementation and Optimization",
+    description:
+      "We integrate and refine every solution to ensure seamless performance, long-term stability, and measurable results.",
   },
 ];
 export default function OurProcess() {
@@ -20,12 +25,12 @@ export default function OurProcess() {
           <p className="text-sm uppercase text-gray-400 mb-2">Our Process</p>
           <h2 className="xl:text-5xl  lg:text-[42px] text-4xl  font-semibold leading-tight mb-4">
             Proven Process for <br />
-            Growing Your <br />
-            Business
+            Delivering Smart Solutions
           </h2>
           <p className="text-gray-400 mb-10">
-            Break down departmental data silos to empower solutions across your
-            entire enterprise. Discover the value of data unity.
+            We combine engineering expertise, technology innovation, and R&D
+            consulting to build solutions that drive business growth and
+            operational excellence. Experience the power of connected systems.
           </p>
 
           <div className="space-y-6">

@@ -11,7 +11,7 @@ const features = [
   {
     title: "Generators",
     description:
-      "We supply, install, and maintain high-performance generators designed to deliver uninterrupted power for industrial and commercial needs. Reliability and energy efficiency are at the core of our solutions.",
+      "We supply, install, and maintain high performance generators designed to deliver uninterrupted power for industrial and commercial needs. Reliability and energy efficiency are at the core of our solutions.",
     icon: "☁️",
     category: "Electrical & Mechanical",
   },
@@ -25,21 +25,21 @@ const features = [
   {
     title: "PCB’s",
     description:
-      "We design and develop high-quality Printed Circuit Boards (PCBs) that power a wide range of electronic systems, ensuring performance, precision, and long-lasting reliability.",
+      "We design and develop high quality Printed Circuit Boards (PCBs) that power a wide range of electronic systems, ensuring performance, precision, and long lasting reliability.",
     icon: "⚡",
     category: "Electrical & Mechanical",
   },
   {
     title: "Software Development",
     description:
-      "We build custom software solutions tailored to your business needs—web, mobile, or enterprise. Our team focuses on scalability, performance, and seamless user experience across every platform.",
+      "We build custom software solutions tailored to your business needs web, mobile, or enterprise. Our team focuses on scalability, performance, and seamless user experience across every platform.",
     icon: "⚡",
     category: "Software",
   },
   {
     title: "R&D & Consulting",
     description:
-      "Our R&D and Consulting services help organizations innovate and grow through research-backed strategies. From concept validation to full-scale development, we turn ideas into practical, high-impact solutions.",
+      "Our R&D and Consulting services help organizations innovate and grow through research backed strategies. From concept validation to full scale development, we turn ideas into practical, high impact solutions.",
     icon: "⚡",
     category: "R&D & Consulting",
   },
