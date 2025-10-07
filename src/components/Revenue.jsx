@@ -5,12 +5,12 @@ export default function RevenueSection() {
   return (
     <section className="bg-[#0F1426]  py-20">
       <div className="custom-container flex justify-center items-center">
-        <div className="bg-gradient-to-r from-cyan-400 to-blue-600 text-center rounded-lg px-20 py-12 max-w-3xl shadow-lg">
+        <div className="bg-gradient-to-r from-cyan-400 to-blue-600 text-center rounded-lg md:px-20 px-4 md:py-12 py-4 max-w-3xl shadow-lg">
           <p className="uppercase text-xs font-medium text-white/80 tracking-widest mb-4">
             Works Together
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-snug">
+          <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 md:leading-snug">
             We've Help Businesses <br /> Increase Revenue
           </h2>
 
@@ -18,7 +18,6 @@ export default function RevenueSection() {
             But in certain circumstances and owing to the claims of duty or the
             obligations of business it will frequently
           </p>
-
 
           <Link
             to="/contact-us"

@@ -15,10 +15,10 @@ const features = [
 export default function OurProcess() {
   return (
     <section className="bg-[#0F1426] text-white py-12 ">
-      <div className="custom-container flex md:flex-row flex-col justify-between items-center">
-        <div className="max-w-[440px] ">
+      <div className="custom-container flex md:flex-row flex-col justify-between lg:space-x-0 md:space-x-8 md:space-y-0 space-y-16 items-center">
+        <div className="lg:max-w-[440px] md:max-w-[350px] ">
           <p className="text-sm uppercase text-gray-400 mb-2">Our Process</p>
-          <h2 className="text-5xl font-semibold leading-tight mb-4">
+          <h2 className="xl:text-5xl  lg:text-[42px] text-4xl  font-semibold leading-tight mb-4">
             Proven Process for <br />
             Growing Your <br />
             Business
@@ -46,7 +46,11 @@ export default function OurProcess() {
             ))}
           </div>
         </div>
-        <img src="/our-process.png" alt="Our Process" />
+        <img
+          src="/our-process.png"
+          alt="Our Process"
+          className="lg:max-w-max md:max-w-[330px]"
+        />
       </div>
     </section>
   );

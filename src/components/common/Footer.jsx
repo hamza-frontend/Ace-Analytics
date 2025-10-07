@@ -33,6 +33,8 @@ export default function Footer() {
       id: "our-services",
       dropdown: [
         { to: "/services/it-consultancy", label: "IT Consultancy" },
+
+        { to: "/services/software-development", label: "Software Development" },
         {
           to: "/services/electrical-mechanical",
           label: "Electrical & Mechanical",
@@ -45,7 +47,6 @@ export default function Footer() {
             { to: "/services/electrical-mechanical/pcb's", label: "PCB’s" },
           ],
         },
-        { to: "/services/software-development", label: "Software Development" },
         { to: "/services/r&d-consulting", label: "R&D & Consulting" },
       ],
     },
@@ -68,9 +69,9 @@ export default function Footer() {
 
       <div className="relative z-10   custom-container  py-12">
         {/* Main footer content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-8 lg:gap-12">
           {/* Company Info */}
-          <div className="lg:col-span-1">
+          <div className="xl:col-span-2">
             <div className="mb-6">
               <img
                 src="/logo-ace.png"
@@ -107,7 +108,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="">
             <h3 className="text-lg font-semibold mb-6 text-white md:text-left text-center">
               Quick Links
             </h3>
@@ -129,7 +130,7 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="whitespace-nowrap">
             <h3 className="md:text-left text-center text-lg font-semibold mb-6 text-white">
               Services
             </h3>
@@ -148,7 +149,7 @@ export default function Footer() {
 
                     {/* Nested dropdown for Electrical & Mechanical */}
                     {service.dropdown && (
-                      <ul className="ml-6 mt-2 space-y-2">
+                      <ul className="ml-4 mt-2 space-y-2">
                         {service.dropdown.map((sub) => (
                           <li key={sub.label}>
                             <a
@@ -168,14 +169,14 @@ export default function Footer() {
           </div>
 
           {/* Newsletter & Contact */}
-          <div>
+          <div className="xl:col-span-2">
             <h3 className="md:text-left text-center text-lg font-semibold mb-6 text-white">
               Stay Connected
             </h3>
 
             {/* Newsletter Signup */}
             <div className="mb-6">
-              <div className="relative">
+              <div className="relative md:mx-0 mx-auto  w-[346px]">
                 <input
                   type="email"
                   value={email}

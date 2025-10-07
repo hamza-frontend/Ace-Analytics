@@ -46,7 +46,11 @@ export default function Header() {
       <div className="custom-container flex justify-between items-center py-4">
         {/* Logo */}
         <Link to="/">
-          <img src="/logo-ace.png" alt="Logo" className="w-[285px] h-[45px]" />
+          <img
+            src="/logo-ace.png"
+            alt="Logo"
+            className="xl:w-[245px] lg:w-[225px] md:w-[200px] w-[180px] "
+          />
         </Link>
 
         {/* Desktop Nav */}

@@ -9,9 +9,7 @@ const HeroSection = ({ title, description, banner }) => {
   }, []);
 
   return (
-    <section
-      className={`relative bg-[#0F1426] overflow-hidden ${banner} min-h-[calc(100vh-77px)]`}
-    >
+    <section className={`relative bg-[#0F1426] overflow-hidden ${banner} `}>
       {/* Background Particles */}
       <Particles
         id="tsparticles"
@@ -48,17 +46,15 @@ const HeroSection = ({ title, description, banner }) => {
 
       {/* Content */}
       <div className="relative z-10 custom-container">
-        <div className="flex flex-col justify-center min-h-[calc(100vh-77px)] py-10 ">
-          <div className="text-center lg:text-left text-white lg:max-w-[548px] md:max-w-[400px]">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+        <div className="flex flex-col justify-center xl:min-h-[calc(100vh-72px)] lg:min-h-[calc(100vh-69px)] md:min-h-[calc(100vh-65px)] min-h-[calc(100vh-61px)] py-10 ">
+          <div className="lg:max-w-[548px] md:max-w-[450px] text-center lg:text-left text-white lg:mx-0 mx-auto ">
+            <h1 className="xl:text-6xl md:text-5xl text-4xl leading-tight mb-4">
               {title}
             </h1>
 
-            <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0">
-              {description}
-            </p>
+            <p className="lg:text-lg text-gray-400 mb-6">{description}</p>
 
-            <div className="mt-8">
+            <div className="mx-auto lg:mx-0">
               <a
                 href="/contact-us"
                 className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300"

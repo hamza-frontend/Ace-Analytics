@@ -12,7 +12,7 @@ export default function Generators() {
         description={
           "Providing cutting-edge generator solutions that ensure uninterrupted power for industries, businesses, and residential needs — backed by expert consulting and support."
         }
-         banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
+        banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
       />
 
       {/* About Generators */}
@@ -41,7 +41,9 @@ export default function Generators() {
       {/* Why Choose Us */}
       <section className="py-16">
         <div className="custom-container text-center">
-          <h2 className="text-3xl font-semibold mb-10">Why Choose Our Generators</h2>
+          <h2 className="text-3xl font-semibold mb-10">
+            Why Choose Our Generators
+          </h2>
           <div className="grid md:grid-cols-3 gap-8 text-left">
             {[
               {

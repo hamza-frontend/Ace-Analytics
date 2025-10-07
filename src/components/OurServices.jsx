@@ -65,7 +65,7 @@ export default function OurServices() {
     <section className="bg-[#0F1426] py-16">
       <div className="custom-container">
         {/* Title */}
-        <h2 className="text-white font-semibold text-center text-5xl mb-12">
+        <h2 className="text-white font-semibold text-center xl:text-5xl text-[42px] mb-12">
           Select a Service
         </h2>
 
