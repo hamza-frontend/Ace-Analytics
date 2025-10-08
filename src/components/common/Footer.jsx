@@ -81,8 +81,8 @@ export default function Footer() {
               <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mt-2 rounded-full md:mx-0 mx-auto"></div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed md:text-left text-center">
-              Creating innovative solutions that transform the way businesses
-              operate and connect with their customers worldwide.
+              IT Consultancy, Software Development, R&D, and Electrical &
+              Mechanical Services all under one roof.
             </p>
 
             {/* Social Links */}

@@ -32,7 +32,7 @@ export default function Generators() {
           </p>
         </div>
         <img
-          src="/about-generators.jpg"
+          src="/about-it-consultancy.jpg"
           alt="About Generators"
           className="rounded-lg"
         />

@@ -159,14 +159,14 @@ export default function Header() {
 
       {/* Mobile Dropdown */}
       {open && (
-        <div className="md:hidden bg-white shadow-sm">
+        <div className="md:hidden bg-[#12182d] shadow-sm">
           <div className="px-4 pt-2 pb-3 space-y-2">
             {navLinks.map((link) =>
               link.dropdown ? (
                 <div key={link.to}>
                   <button
                     onClick={() => toggleMobileDropdown(link.label)}
-                    className="w-full text-left text-black font-semibold hover:text-primary"
+                    className="w-full text-left text-white font-semibold "
                   >
                     {link.label}
                   </button>
@@ -177,7 +177,7 @@ export default function Header() {
                           <div key={item.to}>
                             <button
                               onClick={() => toggleMobileDropdown(item.label)}
-                              className="w-full text-left text-gray-700 hover:text-primary"
+                              className="w-full text-left text-white "
                             >
                               {item.label}
                             </button>
@@ -187,7 +187,7 @@ export default function Header() {
                                   <Link
                                     key={sub.to}
                                     to={sub.to}
-                                    className="block text-gray-600 hover:text-primary"
+                                    className="block text-white "
                                     onClick={() => setOpen(false)}
                                   >
                                     {sub.label}
@@ -200,7 +200,7 @@ export default function Header() {
                           <Link
                             key={item.to}
                             to={item.to}
-                            className="block text-gray-700 hover:text-primary"
+                            className="block text-white "
                             onClick={() => setOpen(false)}
                           >
                             {item.label}
@@ -214,7 +214,7 @@ export default function Header() {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className="block text-black font-semibold hover:text-primary"
+                  className="block text-white font-semibold "
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

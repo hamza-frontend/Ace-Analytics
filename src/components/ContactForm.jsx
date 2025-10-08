@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import Map from "./Map";
 
 export default function ContactForm() {
   const [form, setForm] = useState({
@@ -15,60 +17,44 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", form);
-    // you can add API call or email integration here
+    // You can integrate email service or API here
   };
 
   return (
-    <section id="contact-us" className="bg-[#0F1426] text-white py-16 ">
-      <div className="custom-container">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-white font-semibold text-center text-5xl mb-16">
-            Get In Touch!
+    <section id="contact-us" className="bg-[#0F1426] text-white py-20">
+      <div className="custom-container grid lg:grid-cols-2 gap-12 items-center">
+        {/* Left: Form */}
+        <div>
+          <h2 className="font-bold text-4xl md:text-5xl mb-6 text-center md:text-left">
+            Get In Touch
           </h2>
+          <p className="text-gray-400 mb-10 text-center md:text-left max-w-lg">
+            Have a project in mind or need expert consultation? Fill out the
+            form below — we’d love to hear from you.
+          </p>
+
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Name */}
-            <div>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="Your Name"
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 
-              focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300"
-                required
-              />
-            </div>
+            {["name", "email", "subject"].map((field) => (
+              <div key={field}>
+                <input
+                  type={field === "email" ? "email" : "text"}
+                  name={field}
+                  value={form[field]}
+                  onChange={handleChange}
+                  placeholder={
+                    field === "name"
+                      ? "Your Name"
+                      : field === "email"
+                      ? "Your Email"
+                      : "Subject"
+                  }
+                  className="w-full px-4 py-3 bg-gray-800/80 border border-gray-700 rounded-lg text-white placeholder-gray-400 
+                  focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300"
+                  required
+                />
+              </div>
+            ))}
 
-            {/* Email */}
-            <div>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="Your Email"
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 
-              focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300"
-                required
-              />
-            </div>
-
-            {/* Subject */}
-            <div>
-              <input
-                type="text"
-                name="subject"
-                value={form.subject}
-                onChange={handleChange}
-                placeholder="Subject"
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 
-              focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300"
-                required
-              />
-            </div>
-
-            {/* Message */}
             <div>
               <textarea
                 name="message"
@@ -76,23 +62,50 @@ export default function ContactForm() {
                 onChange={handleChange}
                 placeholder="Your Message"
                 rows="5"
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 
-              focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300 resize-none"
+                className="w-full px-4 py-3 bg-gray-800/80 border border-gray-700 rounded-lg text-white placeholder-gray-400 
+                focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300 resize-none"
                 required
               />
             </div>
 
-            {/* Submit Button */}
-            <div className="text-center">
+            <div className="text-center md:text-left">
               <button
                 type="submit"
                 className="cursor-pointer bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 
-              text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Send Message
               </button>
             </div>
           </form>
+        </div>
+
+        {/* Right: Map + Contact Info in One Card */}
+        <div className="bg-gray-900/60 border border-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
+          {/* Contact Info */}
+          <div className="p-6 border-b border-gray-800">
+            <h3 className="text-xl font-semibold mb-4 text-gradient bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              Contact Us Manually
+            </h3>
+            <ul className="space-y-4 text-gray-300">
+              <li className="flex items-center gap-3">
+                <Mail className="text-teal-400" size={20} />
+                <span>info@aceanalytics.com</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="text-teal-400" size={20} />
+                <span>+92 300 1234567</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <MapPin className="text-teal-400" size={20} />
+                <span>Lahore, Pakistan</span>
+              </li>
+            </ul>
+          </div>
+          {/* Map */}
+          <div className=" w-full">
+            <Map />
+          </div>
         </div>
       </div>
     </section>

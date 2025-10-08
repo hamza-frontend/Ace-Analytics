@@ -11,12 +11,12 @@ export default function RevenueSection() {
           </p>
 
           <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 md:leading-snug">
-            We've Help Businesses <br /> Increase Revenue
+            We Help Businesses <br /> Innovate and Grow
           </h2>
 
           <p className="text-white/80 text-sm md:text-base max-w-xl mx-auto mb-8">
-            But in certain circumstances and owing to the claims of duty or the
-            obligations of business it will frequently
+            Innovative IT, software, engineering, and R&D solutions that empower
+            businesses to achieve lasting success.
           </p>
 
           <Link

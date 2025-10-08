@@ -12,7 +12,6 @@ const ContactUs = () => {
         banner="bg-[url('/about-us-hero.png')] bg-cover bg-center bg-no-repeat"
       />
       <ContactForm />
-      <Map />
     </>
   );
 };

@@ -12,26 +12,29 @@ const OurStory = () => {
         <div className="space-y-2">
           <h2 className="text-3xl  font-semibold text-white ">Our Story</h2>
           <p className="text-lg text-gray-400">
-            Founded in 2010, we began with a simple mission: to help businesses
-            thrive in the digital age. What started as a small team of
-            passionate professionals has grown into a full-service company
-            serving clients worldwide.
+            Founded in 2010, Ace Analytics began with a clear vision to redefine
+            how businesses integrate technology and engineering for growth.
+            <br /> What started as a small team of skilled engineers has grown
+            into a multidisciplinary company delivering IT consultancy, software
+            solutions, electrical and mechanical systems, and R&D services to
+            clients across industries.
           </p>
           <p className="text-lg text-gray-400">
-            Today, we combine cutting-edge technology with creative thinking to
-            deliver solutions that drive real results. Our diverse team brings
-            together expertise across multiple disciplines to tackle your
-            toughest challenges.
+            Over the years, we have built our reputation on precision,
+            innovation, and reliability, helping organizations streamline
+            operations, enhance performance, and achieve measurable results.
           </p>
           <h2 className="text-3xl  font-semibold text-white ">Our Mission</h2>
           <p className="text-lg text-gray-400">
-            To empower businesses of all sizes with innovative, scalable
-            solutions that drive growth and create lasting value.
+            To empower industries with integrated engineering and technology
+            solutions that drive innovation, improve efficiency, and enable
+            sustainable business growth.
           </p>
           <h2 className="text-3xl  font-semibold text-white ">Our Vision</h2>
           <p className="text-lg text-gray-400">
-            To be the most trusted partner for businesses seeking digital
-            transformation and sustainable success.
+            To be a global leader in intelligent engineering and technology
+            solutions, transforming ideas into impactful results through
+            innovation, research, and collaboration.
           </p>
         </div>
       </div>
