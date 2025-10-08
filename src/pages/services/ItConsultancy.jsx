@@ -12,7 +12,7 @@ export default function ITConsultancy() {
         description={
           "Empowering organizations with strategic IT guidance, cutting-edge solutions, and expert insights to help you achieve your business goals with confidence."
         }
-         banner="bg-[url('/projects-banner.png')] bg-cover bg-center bg-no-repeat"
+         banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
       />
 
       {/* About IT Consultancy */}

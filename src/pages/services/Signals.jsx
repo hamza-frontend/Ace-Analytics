@@ -12,7 +12,7 @@ export default function Signals() {
         description={
           "Delivering robust and reliable signal solutions for communication, safety, and monitoring — designed for industries, businesses, and infrastructure projects."
         }
-         banner="bg-[url('/projects-banner.png')] bg-cover bg-center bg-no-repeat"
+         banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
       />
 
       {/* About Signals */}

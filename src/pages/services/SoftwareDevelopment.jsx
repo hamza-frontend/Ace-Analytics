@@ -12,7 +12,7 @@ export default function SoftwareDevelopment() {
         description={
           "We design and build scalable, secure, and future-ready software solutions that empower your business to innovate, streamline operations, and deliver value faster."
         }
-        banner="bg-[url('/projects-banner.png')] bg-cover bg-center bg-no-repeat"
+        banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
       />
 
       {/* About Software Development */}
