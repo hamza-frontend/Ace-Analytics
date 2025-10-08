@@ -214,7 +214,7 @@ export default function Header() {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className="block text-white font-semibold "
+                  className="block text-white font-semibold"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}
