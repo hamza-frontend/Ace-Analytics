@@ -34,9 +34,9 @@ export default function SoftwareDevelopment() {
           </p>
         </div>
         <img
-          src="/about-it-consultancy.jpg"
+          src="/about-us.jpg"
           alt="About Software Development"
-          className="rounded-lg"
+          className="rounded-lg lg:max-w-[400px] ml-auto"
         />
       </section>
 

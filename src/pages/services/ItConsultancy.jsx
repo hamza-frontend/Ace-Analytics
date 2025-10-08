@@ -16,7 +16,7 @@ export default function ITConsultancy() {
       />
 
       {/* About IT Consultancy */}
-      <section className="py-16 custom-container grid md:grid-cols-2 gap-10 items-center">
+      <section className="py-16 custom-container grid md:grid-cols-2  gap-10 items-center">
         <div>
           <h2 className="text-3xl font-semibold mb-4">About Our Expertise</h2>
           <p className="text-gray-400 leading-relaxed mb-4">
@@ -32,9 +32,9 @@ export default function ITConsultancy() {
           </p>
         </div>
         <img
-          src="/about-it-consultancy.jpg"
+          src="/about-us.jpg"
           alt="About IT Consultancy"
-          className="rounded-lg"
+          className="rounded-lg lg:max-w-[400px] ml-auto"
         />
       </section>
 

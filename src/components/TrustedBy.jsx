@@ -2,11 +2,11 @@ import React from "react";
 
 export default function TrustedBy() {
   const logos = [
-    { src: "/bindo-pos.svg", alt: "Bindo POS" },
-    { src: "/module-builder.svg", alt: "Module Builder" },
-    { src: "/bindo-discovery.svg", alt: "Bindo Discovery" },
-    { src: "/bindo-pos.svg", alt: "Bindo POS" },
-    { src: "/module-builder.svg", alt: "Module Builder" },
+    { src: "/client-1.png", alt: "Nust Logo" },
+    { src: "/client-2.png", alt: "Pakistan Software Export Board Logo" },
+    { src: "/client-1.png", alt: "Nust Logo" },
+    { src: "/client-2.png", alt: "Pakistan Software Export Board Logo" },
+    { src: "/client-1.png", alt: "Nust Logo" },
   ];
 
   // duplicate once for seamless loop

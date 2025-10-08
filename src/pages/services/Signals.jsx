@@ -34,9 +34,9 @@ export default function Signals() {
           </p>
         </div>
         <img
-           src="/about-it-consultancy.jpg"
+           src="/about-us.jpg"
           alt="About Signals"
-          className="rounded-lg"
+         className="rounded-lg lg:max-w-[400px] ml-auto"
         />
       </section>
 

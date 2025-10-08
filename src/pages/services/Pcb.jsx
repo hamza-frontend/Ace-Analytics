@@ -12,13 +12,15 @@ export default function Pcb() {
         description={
           "From prototyping to mass production, we provide end-to-end PCB design, fabrication, and assembly services that power modern electronic devices."
         }
-         banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
+        banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
       />
 
       {/* About PCBs */}
       <section className="py-16 custom-container grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h2 className="text-3xl font-semibold mb-4">About Our PCB Expertise</h2>
+          <h2 className="text-3xl font-semibold mb-4">
+            About Our PCB Expertise
+          </h2>
           <p className="text-gray-400 leading-relaxed mb-4">
             Our team specializes in designing and manufacturing Printed Circuit
             Boards (PCBs) for a wide range of applications — from consumer
@@ -27,22 +29,20 @@ export default function Pcb() {
             and performance.
           </p>
           <p className="text-gray-400 leading-relaxed">
-            Whether it’s a simple single-layer board or a complex
-            multi-layer design, we provide solutions tailored to your technical
-            and business requirements.
+            Whether it’s a simple single-layer board or a complex multi-layer
+            design, we provide solutions tailored to your technical and business
+            requirements.
           </p>
         </div>
-        <img
-            src="/about-it-consultancy.jpg"
-          alt="About PCBs"
-          className="rounded-lg"
-        />
+        <img src="/about-us.jpg" alt="About PCBs" className="rounded-lg lg:max-w-[400px] ml-auto" />
       </section>
 
       {/* Why Choose Us */}
       <section className="py-16">
         <div className="custom-container text-center">
-          <h2 className="text-3xl font-semibold mb-10">Why Choose Our PCB Services</h2>
+          <h2 className="text-3xl font-semibold mb-10">
+            Why Choose Our PCB Services
+          </h2>
           <div className="grid md:grid-cols-3 gap-8 text-left">
             {[
               {

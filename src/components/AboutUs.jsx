@@ -8,7 +8,7 @@ export default function AboutSection() {
         <div className="flex md:flex-row flex-col md:justify-between md:items-center lg:space-x-0 md:space-x-8  md:space-y-0 space-y-16">
           {/* Left Column */}
           <img
-            src="/about-us-2.jpg"
+            src="/about-us.jpg"
             alt="About Us"
             className="xl:max-w-[513px] xl:max-h-[446px] lg:max-w-[450px] lg:max-h-[400px] md:max-w-[380px] "
           />
