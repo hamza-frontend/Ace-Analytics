@@ -12,7 +12,7 @@ export default function RDConsulting() {
         description={
           "We empower organizations with research-driven strategies, cutting-edge consulting, and forward-looking solutions that fuel innovation and long-term success."
         }
-         banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
+        banner="bg-[url('/services-page-banner-compressed.png')] bg-cover bg-center bg-no-repeat"
       />
 
       {/* About R&D & Consulting */}
@@ -29,14 +29,14 @@ export default function RDConsulting() {
           </p>
           <p className="text-gray-400 leading-relaxed">
             From emerging technologies to process optimization, our team guides
-            you through ideation, experimentation, and implementation —
-            ensuring every initiative creates measurable impact.
+            you through ideation, experimentation, and implementation ensuring
+            every initiative creates measurable impact.
           </p>
         </div>
         <img
-           src="/about-us.jpg"
+          src="/about-us.jpg"
           alt="About R&D and Consulting"
-         className="rounded-lg lg:max-w-[400px] ml-auto"
+          className="rounded-lg lg:max-w-[400px] ml-auto"
         />
       </section>
 

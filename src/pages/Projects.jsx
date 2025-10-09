@@ -10,7 +10,7 @@ export default function Projects() {
         description={
           "A selection of our latest projects across different categories. Explore our creative and technical expertise."
         }
-        banner="bg-[url('/projects-banner.png')] bg-cover bg-center bg-no-repeat"
+        banner="bg-[url('/projects-banner-compressed.png')] bg-cover bg-center bg-no-repeat"
       />
       <OurProjects />
     </>

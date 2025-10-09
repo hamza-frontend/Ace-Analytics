@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Map from "./Map";
+import { Link } from "react-router-dom";
 
 export default function ContactForm() {
   const [form, setForm] = useState({
@@ -30,7 +31,7 @@ export default function ContactForm() {
           </h2>
           <p className="text-gray-400 mb-10 text-center md:text-left max-w-lg">
             Have a project in mind or need expert consultation? Fill out the
-            form below — we’d love to hear from you.
+            form below, we’d love to hear from you.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -90,15 +91,32 @@ export default function ContactForm() {
             <ul className="space-y-4 text-gray-300">
               <li className="flex items-center gap-3">
                 <Mail className="text-teal-400" size={20} />
-                <span>info@aceanalytics.com</span>
+                <Link
+                  to={"mailto:info@aceanalytics.com"}
+                  className="hover:text-teal-400 transition-colors duration-300"
+                >
+                  info@aceanalytics.com
+                </Link>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-teal-400" size={20} />
-                <span>+92 300 1234567</span>
+                <Link
+                  to={"tel:+92 300 1234567"}
+                  className="hover:text-teal-400 transition-colors duration-300 "
+                >
+                  +92 300 1234567
+                </Link>
               </li>
               <li className="flex items-center gap-3">
                 <MapPin className="text-teal-400" size={20} />
-                <span>Lahore, Pakistan</span>
+                <Link
+                  to="https://maps.app.goo.gl/BZgYJ7akjNQqZcMD7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-teal-400 transition-colors duration-300 "
+                >
+                  Melbourne Victoria 3004, Australia
+                </Link>
               </li>
             </ul>
           </div>

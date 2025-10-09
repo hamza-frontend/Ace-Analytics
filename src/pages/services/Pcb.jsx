@@ -12,7 +12,7 @@ export default function Pcb() {
         description={
           "From prototyping to mass production, we provide end-to-end PCB design, fabrication, and assembly services that power modern electronic devices."
         }
-        banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
+        banner="bg-[url('/services-page-banner-compressed.png')] bg-cover bg-center bg-no-repeat"
       />
 
       {/* About PCBs */}
@@ -23,7 +23,7 @@ export default function Pcb() {
           </h2>
           <p className="text-gray-400 leading-relaxed mb-4">
             Our team specializes in designing and manufacturing Printed Circuit
-            Boards (PCBs) for a wide range of applications — from consumer
+            Boards (PCBs) for a wide range of applications, from consumer
             electronics to industrial systems. With precision engineering and
             advanced fabrication techniques, we ensure durability, reliability,
             and performance.
@@ -34,7 +34,11 @@ export default function Pcb() {
             requirements.
           </p>
         </div>
-        <img src="/about-us.jpg" alt="About PCBs" className="rounded-lg lg:max-w-[400px] ml-auto" />
+        <img
+          src="/about-us.jpg"
+          alt="About PCBs"
+          className="rounded-lg lg:max-w-[400px] ml-auto"
+        />
       </section>
 
       {/* Why Choose Us */}

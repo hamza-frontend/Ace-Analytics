@@ -10,9 +10,9 @@ export default function Generators() {
       <HeroSection
         title={"Reliable Generators & Power Solutions"}
         description={
-          "Providing cutting-edge generator solutions that ensure uninterrupted power for industries, businesses, and residential needs — backed by expert consulting and support."
+          "Providing cutting-edge generator solutions that ensure uninterrupted power for industries, businesses, and residential needs  backed by expert consulting and support."
         }
-        banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
+        banner="bg-[url('/services-page-banner-compressed.png')] bg-cover bg-center bg-no-repeat"
       />
 
       {/* About Generators */}
@@ -20,7 +20,7 @@ export default function Generators() {
         <div>
           <h2 className="text-3xl font-semibold mb-4">About Our Solutions</h2>
           <p className="text-gray-400 leading-relaxed mb-4">
-            Our generator services cover the full spectrum of power solutions —
+            Our generator services cover the full spectrum of power solutions
             from supply and installation to maintenance and consulting. Whether
             for large-scale industries, businesses, or emergency backup systems,
             we deliver reliable and efficient power infrastructure.
@@ -34,7 +34,7 @@ export default function Generators() {
         <img
           src="/about-us.jpg"
           alt="About Generators"
-         className="rounded-lg lg:max-w-[400px] ml-auto"
+          className="rounded-lg lg:max-w-[400px] ml-auto"
         />
       </section>
 

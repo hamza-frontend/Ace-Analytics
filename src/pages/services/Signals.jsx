@@ -10,9 +10,9 @@ export default function Signals() {
       <HeroSection
         title={"Advanced Signals & Communication Systems"}
         description={
-          "Delivering robust and reliable signal solutions for communication, safety, and monitoring — designed for industries, businesses, and infrastructure projects."
+          "Delivering robust and reliable signal solutions for communication, safety, and monitoring  designed for industries, businesses, and infrastructure projects."
         }
-         banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
+        banner="bg-[url('/services-page-banner-compressed.png')] bg-cover bg-center bg-no-repeat"
       />
 
       {/* About Signals */}
@@ -34,9 +34,9 @@ export default function Signals() {
           </p>
         </div>
         <img
-           src="/about-us.jpg"
+          src="/about-us.jpg"
           alt="About Signals"
-         className="rounded-lg lg:max-w-[400px] ml-auto"
+          className="rounded-lg lg:max-w-[400px] ml-auto"
         />
       </section>
 
@@ -58,7 +58,7 @@ export default function Signals() {
               },
               {
                 title: "Custom-Built Systems",
-                desc: "Every project is unique — we provide tailored signal infrastructure that meets your exact requirements.",
+                desc: "Every project is unique, we provide tailored signal infrastructure that meets your exact requirements.",
               },
             ].map((item, i) => (
               <div

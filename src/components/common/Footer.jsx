@@ -10,6 +10,7 @@ import {
   ArrowUp,
   Heart,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -93,16 +94,16 @@ export default function Footer() {
                 { icon: Instagram, href: "#", label: "Instagram" },
                 { icon: Linkedin, href: "#", label: "LinkedIn" },
               ].map(({ icon: Icon, href, label }) => (
-                <a
+                <Link
                   key={label}
-                  href={href}
+                  to={href}
                   className="group relative text-white p-2 bg-gray-800 rounded-lg hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 transition-all duration-300 transform hover:scale-110"
                   aria-label={label}
                 >
                   {Icon && (
                     <Icon className="h-5 w-5 group-hover:text-white transition-colors duration-300" />
                   )}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -117,13 +118,13 @@ export default function Footer() {
                 .filter((item) => item.id !== "our-services") // exclude services
                 .map((item) => (
                   <li key={item.id}>
-                    <a
-                      href={item.to}
+                    <Link
+                      to={item.to}
                       className="text-gray-400 hover:text-teal-400 transition-colors duration-300 flex md:justify-start justify-center items-center group"
                     >
                       <span className="w-0 group-hover:w-2 h-px bg-teal-400 transition-all duration-300 mr-0 group-hover:mr-3"></span>
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
             </ul>
@@ -139,26 +140,26 @@ export default function Footer() {
                 .find((item) => item.id === "our-services") // find services
                 ?.dropdown.map((service) => (
                   <li key={service.label}>
-                    <a
-                      href={service.to}
+                    <Link
+                      to={service.to}
                       className="text-gray-400 hover:text-teal-400 transition-colors duration-300 flex md:justify-start justify-center items-center group"
                     >
                       <span className="w-0 group-hover:w-2 h-px bg-teal-400 transition-all duration-300 mr-0 group-hover:mr-3"></span>
                       {service.label}
-                    </a>
+                    </Link>
 
                     {/* Nested dropdown for Electrical & Mechanical */}
                     {service.dropdown && (
                       <ul className="ml-4 mt-2 space-y-2">
                         {service.dropdown.map((sub) => (
                           <li key={sub.label}>
-                            <a
-                              href={sub.to}
+                            <Link
+                              to={sub.to}
                               className="text-gray-400 hover:text-teal-400 transition-colors duration-300 flex md:justify-start justify-center items-center group"
                             >
                               <span className="w-0 group-hover:w-2 h-px bg-teal-400 transition-all duration-300 mr-0 group-hover:mr-3"></span>
                               {sub.label}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -191,7 +192,7 @@ export default function Footer() {
                 />
                 <button
                   onClick={handleSubscribe}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-4 py-1.5 rounded-md transition-all duration-300 transform hover:scale-105"
+                  className="cursor-pointer absolute right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-4 py-1.5 rounded-md transition-all duration-300 transform hover:scale-105"
                 >
                   Subscribe
                 </button>
@@ -211,18 +212,18 @@ export default function Footer() {
                   text: "+1 (555) 123-4567",
                   href: "tel:+15551234567",
                 },
-                { icon: MapPin, text: "New York, NY 10001", href: "#" },
+                { icon: MapPin, text: "New York, NY 10001", href: "https://maps.app.goo.gl/BZgYJ7akjNQqZcMD7" },
               ].map(({ icon: Icon, text, href }) => (
-                <a
+                <Link
                   key={text}
-                  href={href}
+                  to={href}
                   className="flex md:justify-start justify-center items-center text-gray-400 hover:text-teal-400 transition-colors duration-300 group"
                 >
                   {Icon && (
                     <Icon className="h-4 w-4 mr-3 group-hover:scale-110 transition-transform duration-300" />
                   )}
                   <span className="text-sm">{text}</span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -242,14 +243,14 @@ export default function Footer() {
             <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm">
               {["Privacy Policy", "Terms of Service", "Cookie Policy"].map(
                 (link) => (
-                  <a
+                  <Link
                     key={link}
-                    href="#"
+                    to="#"
                     className="text-gray-400 hover:text-white transition-colors duration-300 relative group"
                   >
                     {link}
                     <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300"></span>
-                  </a>
+                  </Link>
                 )
               )}
             </div>

@@ -12,7 +12,7 @@ export default function ITConsultancy() {
         description={
           "Empowering organizations with strategic IT guidance, cutting-edge solutions, and expert insights to help you achieve your business goals with confidence."
         }
-         banner="bg-[url('/services-page-banner.png')] bg-cover bg-center bg-no-repeat"
+        banner="bg-[url('/services-page-banner-compressed.png')] bg-cover bg-center bg-no-repeat"
       />
 
       {/* About IT Consultancy */}
@@ -50,7 +50,7 @@ export default function ITConsultancy() {
               },
               {
                 title: "Tailored Strategies",
-                desc: "We don’t believe in one-size-fits-all — every plan is customized for your unique business goals.",
+                desc: "We don’t believe in one-size-fits-all, every plan is customized for your unique business goals.",
               },
               {
                 title: "Future-Ready Solutions",

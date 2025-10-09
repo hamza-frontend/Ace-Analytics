@@ -9,7 +9,7 @@ const ContactUs = () => {
       <HeroSection
         title="Contact Us"
         description="We are here to assist you. Reach out to us for any inquiries, support, or collaboration opportunities. Your success is our priority."
-        banner="bg-[url('/contact-us-hero.png')] bg-cover bg-center bg-no-repeat"
+        banner="bg-[url('/contact-us-hero-compressed.png')] bg-cover bg-center bg-no-repeat"
       />
       <ContactForm />
     </>

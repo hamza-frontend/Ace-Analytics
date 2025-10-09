@@ -11,7 +11,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative bg-[#0F1426]  overflow-hidden   bg-[url('/home-hero-section.png')] bg-cover bg-center bg-no-repeat"
+      className="relative bg-[#0F1426]  overflow-hidden   bg-[url('/home-hero-section-compressed.png')] bg-cover bg-center bg-no-repeat"
     >
       {/* Particles */}
       <Particles
@@ -59,7 +59,7 @@ export default function HeroSection() {
             </h1>
             <p className="lg:text-lg text-gray-400 mb-6">
               IT Consultancy, Software Development, R&D, and Electrical &
-              Mechanical Services — all under one roof.
+              Mechanical Services all under one roof.
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
               <a

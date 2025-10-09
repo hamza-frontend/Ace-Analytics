@@ -14,7 +14,7 @@ export default function AboutUs() {
       <HeroSection
         title="About us"
         description="We are a trusted technology and engineering partner specializing in IT Consultancy, Software Development, R&D, and Electrical & Mechanical services. At Ace Analytics, we create innovative solutions that drive growth and lasting impact."
-        banner="bg-[url('/about-us-hero.png')] bg-cover bg-center bg-no-repeat"
+        banner="bg-[url('/about-us-hero-compressed.png')] bg-cover bg-center bg-no-repeat"
       />
       <OurStory />
       <OurProcess />

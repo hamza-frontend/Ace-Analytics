@@ -7,6 +7,12 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    if (pathname === "/contact-us") {
+      const element = document.getElementById("contact-us");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   }, [pathname]);
 
   return null;
