@@ -20,7 +20,7 @@ export default function AboutUs() {
       <OurProcess />
       <OurValues />
       <OurAchievements />
-      <TestimonialCarousel />
+      {/* <TestimonialCarousel /> */}
       <RevenueSection />
     </div>
   );
