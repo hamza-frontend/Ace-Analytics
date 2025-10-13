@@ -108,7 +108,7 @@ export default function ContactForm() {
                 </Link>
               </li>
               <li className="flex items-center gap-3">
-                <MapPin className="text-teal-400" size={20} />
+                <MapPin className="text-teal-400 min-w-5 max-w-5 min-h-5 max-h-5" />
                 <Link
                   to="https://maps.app.goo.gl/gWT2CcTopKCKBG839"
                   target="_blank"
@@ -122,7 +122,7 @@ export default function ContactForm() {
                 </Link>
               </li>
               <li className="flex items-center gap-3">
-                <MapPin className="text-teal-400" size={20} />
+                <MapPin className="text-teal-400 min-w-5 max-w-5 min-h-5 max-h-5" />
                 <Link
                   to="https://maps.app.goo.gl/AdtNsPkk6qhCn4Pi7"
                   target="_blank"

@@ -226,7 +226,7 @@ export default function Footer() {
                 <Link
                   key={text}
                   to={href}
-                  className="flex md:justify-start justify-center items-center text-gray-400 hover:text-teal-400 transition-colors duration-300 group"
+                  className="flex  md:justify-start justify-center md:text-start text-center items-center text-gray-400 hover:text-teal-400 transition-colors duration-300 group"
                 >
                   {Icon && (
                     <Icon className="min-h-4 min-w-4 max-w-4 max-h-4 mr-3 group-hover:scale-110 transition-transform duration-300" />
