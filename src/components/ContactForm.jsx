@@ -92,30 +92,47 @@ export default function ContactForm() {
               <li className="flex items-center gap-3">
                 <Mail className="text-teal-400" size={20} />
                 <Link
-                  to={"mailto:info@aceanalytics.com"}
+                  to={"mailto:info@theaceanalytics.com"}
                   className="hover:text-teal-400 transition-colors duration-300"
                 >
-                  info@aceanalytics.com
+                  info@theaceanalytics.com
                 </Link>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-teal-400" size={20} />
                 <Link
-                  to={"tel:+92 300 1234567"}
+                  to={"tel:051-8893266-67"}
                   className="hover:text-teal-400 transition-colors duration-300 "
                 >
-                  +92 300 1234567
+                  051-8893266-67
                 </Link>
               </li>
               <li className="flex items-center gap-3">
                 <MapPin className="text-teal-400" size={20} />
                 <Link
-                  to="https://maps.app.goo.gl/BZgYJ7akjNQqZcMD7"
+                  to="https://maps.app.goo.gl/gWT2CcTopKCKBG839"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-teal-400 transition-colors duration-300 "
                 >
-                  Melbourne Victoria 3004, Australia
+                  <strong>Head Office</strong>
+                  <br />
+                  Main Naveed Shaheed Rd, Near MP Checkpost, Sonikote, Gilgit,
+                  Gilgit Baltistan, Pakistan
+                </Link>
+              </li>
+              <li className="flex items-center gap-3">
+                <MapPin className="text-teal-400" size={20} />
+                <Link
+                  to="https://maps.app.goo.gl/AdtNsPkk6qhCn4Pi7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-teal-400 transition-colors duration-300 "
+                >
+                  <strong>Branch Office</strong>
+                  <br />
+                  Flat#04, 2nd Floor, Block C, Mid City Apartments, Near Fazaia
+                  Colony, Rawalpindi, Expressway Islamabad
                 </Link>
               </li>
             </ul>

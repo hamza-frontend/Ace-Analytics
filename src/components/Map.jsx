@@ -5,11 +5,11 @@ const Map = () => {
     <div className="p-6 rounded-lg">
       <iframe
         title="Our Location"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509366!2d144.9537363153187!3d-37.81627974202153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f0a4c9%3A0x5045675218ce7e0!2sVictoria%2C%20Australia!5e0!3m2!1sen!2s!4v1614652361055!5m2!1sen!2s"
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d103406.28956373883!2d74.23105975682283!3d35.91156835171163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMain%20Naveed%20Shaheed%20Rd%2C%20Near%20MP%20Checkpost%2C%20Sonikote%2C%20Gilgit%2C%20Gilgit%20Baltistan%2C%20Pakistan!5e0!3m2!1sen!2s!4v1760350020211!5m2!1sen!2s"
         width="100%"
         height="100%"
         style={{ border: 0, minHeight: "400px" }}
-        allowFullScreen=""
+        allowFullScreen={true}
         loading="lazy"
       ></iframe>
     </div>

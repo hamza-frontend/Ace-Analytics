@@ -204,15 +204,24 @@ export default function Footer() {
               {[
                 {
                   icon: Mail,
-                  text: "hello@yourbrand.com",
-                  href: "mailto:hello@yourbrand.com",
+                  text: "info@theaceanalytics.com",
+                  href: "mailto:info@theaceanalytics.com",
                 },
                 {
                   icon: Phone,
-                  text: "+1 (555) 123-4567",
-                  href: "tel:+15551234567",
+                  text: "051-8893266-67",
+                  href: "tel:051-8893266-67",
                 },
-                { icon: MapPin, text: "New York, NY 10001", href: "https://maps.app.goo.gl/BZgYJ7akjNQqZcMD7" },
+                {
+                  icon: MapPin,
+                  text: "<strong>Head Office</strong> <br/> Main Naveed Shaheed Rd, Near MP Checkpost, Sonikote, Gilgit, Gilgit Baltistan, Pakistan",
+                  href: "https://maps.app.goo.gl/gWT2CcTopKCKBG839",
+                },
+                {
+                  icon: MapPin,
+                  text: "<strong>Branch Office</strong> <br/> Flat#04, 2nd Floor, Block C, Mid City Apartments, Near Fazaia Colony, Rawalpindi, Expressway Islamabad",
+                  href: "https://maps.app.goo.gl/AdtNsPkk6qhCn4Pi7",
+                },
               ].map(({ icon: Icon, text, href }) => (
                 <Link
                   key={text}
@@ -220,9 +229,12 @@ export default function Footer() {
                   className="flex md:justify-start justify-center items-center text-gray-400 hover:text-teal-400 transition-colors duration-300 group"
                 >
                   {Icon && (
-                    <Icon className="h-4 w-4 mr-3 group-hover:scale-110 transition-transform duration-300" />
+                    <Icon className="min-h-4 min-w-4 max-w-4 max-h-4 mr-3 group-hover:scale-110 transition-transform duration-300" />
                   )}
-                  <span className="text-sm">{text}</span>
+                  <div
+                    className="text-sm"
+                    dangerouslySetInnerHTML={{ __html: text }}
+                  />
                 </Link>
               ))}
             </div>
